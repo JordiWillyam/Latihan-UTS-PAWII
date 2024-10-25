@@ -10,4 +10,4 @@ const transaksiSchema = new mongoose.Schema({
 
 // const Mahasiswa = mongoose.model("namaModel",nama Schema)
 const Transaksi = mongoose.model("Transaksi",transaksiSchema);
-module.exports= transaksi;
+module.exports= Transaksi;
