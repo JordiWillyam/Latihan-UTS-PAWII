@@ -1,5 +1,5 @@
 let mongoose = require('mongoose');
-let dbURI = "mongodb://localhost:27017"
+let dbURI = "mongodb://localhost:27017/latihan_uts"
 
 mongoose.connect(dbURI,{
     useNewURLParser: true
