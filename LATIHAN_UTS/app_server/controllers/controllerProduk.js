@@ -23,12 +23,11 @@ const index = (req, res, next) => {
 
 //untuk menghandle request insert mahasiswa
 const insert = (req, res, next) => {
-    const mhs = new Mahasiswa({
+    const mhs = new Produk({
       nama: req.body.nama,
       deskripsi: req.body.deskripsi,
       harga: req.body.harga,
-      stok: req.body.tanggal_lahir,
-      kategori_id: true
+      stok: req.body.stok,
     });
   
     mhs

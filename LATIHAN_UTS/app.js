@@ -4,10 +4,13 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+//load Connection MongoDB
+require('./app_server/models/db');
+
 // Daftar router
-var indexRouter = require('../app_server/routes/index');
-var usersRouter = require('../app_server/routes/users');
-var produkRouter = require('../app_server/routes/produk');
+var indexRouter = require('./app_server/routes/index');
+var usersRouter = require('./app_server/routes/users');
+var produkRouter = require('./app_server/routes/produk');
 var app = express();
 
 // view engine setup
